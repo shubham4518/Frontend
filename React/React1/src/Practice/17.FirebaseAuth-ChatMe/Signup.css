@@ -1,0 +1,145 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+.Signup {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(
+    125deg,
+    #b8e5fa 0%,
+    #82c5e7 45%,
+    #4b94b9 100%
+  );
+}
+
+/* Signup card */
+.Signup form {
+  width: 100%;
+  max-width: 380px;
+  padding: 38px 32px 30px;
+  background: rgba(230, 247, 255, 0.48);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 25px;
+  box-shadow:
+    0 15px 35px rgba(31, 91, 125, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(14px);
+}
+
+/* Heading */
+.Signup form::before {
+  content: 'Create Account';
+  display: block;
+  color: #172b3a;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.8px;
+  margin-bottom: 8px;
+}
+
+/* Subtitle */
+/* .Signup form::after {
+  content: 'Sign up to continue';
+  display: block;
+  color: #304b5c;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 28px;
+} */
+
+/* Input fields */
+.Signup input {
+  display: block;
+  width: 100%;
+  height: 54px;
+  padding: 0 17px;
+  margin-bottom: 13px;
+  color: #172b3a;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(190, 215, 228, 0.8);
+  border-radius: 11px;
+  outline: none;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(40, 80, 105, 0.13);
+  transition: 0.25s ease;
+}
+
+.Signup input::placeholder {
+  color: #8a949c;
+}
+
+.Signup input:focus {
+  border-color: #42a5d8;
+  box-shadow: 0 0 0 3px rgba(66, 165, 216, 0.18);
+}
+
+/* Signup button */
+.Signup button {
+  width: 100%;
+  min-height: 54px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 11px;
+  background: linear-gradient(100deg, #4ba5d5, #82cbed);
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 7px 15px rgba(48, 127, 169, 0.27);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.Signup button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(48, 127, 169, 0.32);
+}
+
+.Signup button:active {
+  transform: translateY(0);
+}
+
+/* Sign in link */
+.Signup p {
+  margin: 20px 0 0;
+  text-align: center;
+  color: #294456;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.Signup a {
+  color: #075985;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.Signup a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile layout */
+@media (max-width: 480px) {
+  .Signup {
+    padding: 18px;
+  }
+
+  .Signup form {
+    padding: 32px 24px;
+    border-radius: 22px;
+  }
+
+  .Signup form::before {
+    font-size: 25px;
+  }
+}

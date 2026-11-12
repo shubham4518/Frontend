@@ -1,0 +1,17 @@
+section {
+  height: auto;
+  width: 100%;
+  background: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+
+div {
+  height: 350px;
+  width: 300px;
+  background: green;
+  border: 1px solid white;
+}

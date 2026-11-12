@@ -1,0 +1,44 @@
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.App{
+    height: 100vh;
+    width: 100vw;
+    background-color:black;
+    @include center;
+    
+
+    form{
+        @include center;
+        height: 300px;
+        width: 300px;   
+        border: 1px solid red;     
+        background-color: white;
+        
+        h1{
+            color: red;
+        }
+        input{
+            padding: 10px;
+            margin: 10px;
+            width: 80%;
+        }
+        button{
+            padding: 10px;
+            margin: 10px;
+            width: 150px;
+        
+            outline:none;
+
+            &:hover{
+                background-color:green;
+                
+            }
+            
+        }
+    }
+}

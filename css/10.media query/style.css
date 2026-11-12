@@ -1,0 +1,28 @@
+div{
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    display:none; 
+}
+@media screen and (max-width:375px){
+    #mobile{
+        display: block;
+    
+    }
+}
+@media (min-width:376px) and (max-width:750px){
+    #tab{
+        display:block;
+    }
+}
+@media (min-width:751px) and (max-width:1050px){
+    #laptop{
+        display:block;
+    }
+}
+@media (min-width:1051px) and (max-width:1550px){
+    #fullscreen{
+        display:block;
+    }
+}

@@ -1,0 +1,23 @@
+.App{
+	background-color: black;
+	color: white;
+}
+img{
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+}
+section{
+    display: flex;
+    align-items: space-between;
+    flex-wrap: wrap;
+
+}
+button{
+    height: 40px;
+    width: 50px;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    color: black;
+}

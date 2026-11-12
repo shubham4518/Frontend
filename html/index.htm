@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <marquee behavior="alternate" scrollamount="20" direction="right">
+      HELLO
+    </marquee>
+    <marquee behavior="alternate" scrollamount="20" direction="left">
+      Shubham
+    </marquee>
+
+    <ruby
+      >Suresh <rt>Firstname</rt><br />
+      Gowda <rt>Sirname</rt></ruby
+    ><br />
+    <abbr title="United States of America"> USA </abbr>
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM-DZeLKz-cHeyZcEE3si9slUmfw6PbjmpIFZOQGHNdA&s=10"
+      alt="something"
+      fallback
+      image=""
+    />
+    <!--  HTML 5
+media  tag, semantic tag,SVG,canvas,compitable  -->
+    <ol type="A">
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Cherry</li>
+    </ol>
+    <br /><br />
+
+    <center>
+      <form
+        action="#"
+        method="get"
+        style="border: 3px solid black; padding: 30px; display: inline-block"
+      >
+        <label for="username">Username:</label>
+        <input
+          type="text"
+          name="username"
+          placeholder="Enter your username"
+        /><br />
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          name="password"
+          placeholder="Enter your password"
+        /><br /><br />
+        <label for="City">City:</label>
+        <select name="city" id="city">
+          <option name="city" value="bengluru">Bengluru</option>
+          <option name="city" value="hyderabad">Hyderabad</option>
+          <option name="city" value="pune">Pune</option></select
+        ><br /><br />
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" value="male" id="male" />
+        <label for="male">Male</label>
+        <input type="radio" name="gender" value="female" id="female" />
+        <label for="female">Female</label>
+        <input type="radio" name="gender" value="other" id="other" />
+        <label for="other">Other</label><br /><br />
+
+        <label for="courses">Courses:</label><br />
+        <input type="checkbox" name="courses" value="python" id="python" />
+        <label for="python">Python</label> <br />
+        <input type="checkbox" name="courses" value="java" id="java" />
+        <label for="java">Java</label> <br />
+        <input
+          type="checkbox"
+          name="courses"
+          value="javascript"
+          id="javascript"
+        />
+        <label for="javascript">JavaScript</label> <br /><br />
+        <input type="submit" value="Submit" />
+      </form>
+    </center>
+    <br /><br />
+
+    <table border="5" cellspacing="0" cellpadding="10" text-align="center">
+      <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+        <th>Header 3</th>
+        <th>Header 4</th>
+      </tr>
+      <tr>
+        <td rowspan="2">Row 1, Cell 1</td>
+        <td colspan="2">Row 1, Cell 2</td>
+
+        <td>Row 1, Cell 4</td>
+      </tr>
+      <tr>
+        <td>Row 2, Cell 2</td>
+        <td>Row 2, Cell 3</td>
+        <td>Row 2, Cell 4</td>
+      </tr>
+    </table>
+  </body>
+</html>

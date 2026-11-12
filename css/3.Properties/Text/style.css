@@ -1,0 +1,14 @@
+div{height: 100vh;
+    width: 70%;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-indent: 50px;
+    text-shadow: 5px 2px 4px rgba(19, 31, 158, 0.5);
+    color: red;
+    text-overflow: ellipsis;
+    text-justify: inter-word;
+    text-orientation: upright;
+    text-rendering: optimizeLegibility;
+    
+}

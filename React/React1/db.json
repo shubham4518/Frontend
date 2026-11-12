@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Akash",
+      "age": 22
+    },
+    {
+      "id": "2",
+      "name": "Rahul",
+      "age": 24
+    },
+    {
+      "id": "3",
+      "name": "Priya",
+      "age": 21
+    },
+    {
+      "id": "4",
+      "name": "Shubham",
+      "age": "24"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

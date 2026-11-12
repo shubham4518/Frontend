@@ -1,0 +1,30 @@
+div {
+  border-top: 50px solid red;
+  border-left: 50px solid yellow;
+  border-right: 50px solid blue;
+  border-bottom: 50px solid green;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  position: relative;
+}
+div::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 150px;
+  height: 125px;
+  background-color: white; 
+}
+div::after {
+  content: "";
+  height: 50px;
+  width: 150px;
+  background: blue;
+  display: block;
+  position: absolute;
+  top: 75px;
+  left: 90px;
+}
+

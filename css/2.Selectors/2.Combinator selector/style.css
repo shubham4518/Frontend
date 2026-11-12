@@ -1,0 +1,19 @@
+/* Desandant selector */
+    section p{
+        color: red;
+    }
+/* Child seelector */
+    section > p{
+        color: blue;
+    }
+
+    /*Adjacent sibling selctor  */
+    section + p{
+        color: green;
+    }   
+
+/* General sibling selector */
+    section ~ p{
+        color:black;
+        font-weight: bold;
+    }    

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Car Game</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            overflow: hidden;
+        }
+
+        .game {
+            width: 100%;
+            height: 100vh;
+            background: skyblue;
+            position: relative;
+        }
+
+        /* Cloud */
+        .cloud {
+            position: absolute;
+            width: 120px;
+            height: 40px;
+            background: white;
+            border-radius: 50px;
+            top: 100px;
+            animation: cloud 6s linear infinite;
+        }
+
+        .cloud::before {
+            content: "";
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: white;
+            border-radius: 50%;
+            left: 20px;
+            top: -25px;
+        }
+
+        .cloud::after {
+            content: "";
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            background: white;
+            border-radius: 50%;
+            right: 15px;
+            top: -30px;
+        }
+
+        .cloud1 {
+            top: 80px;
+            animation-delay: 0s;
+        }
+
+        .cloud2 {
+            top: 180px;
+            animation-delay: 3s;
+        }
+
+        @keyframes cloud {
+            from {
+                left: 100%;
+            }
+
+            to {
+                left: -150px;
+            }
+        }
+
+        /* Road */
+        .road {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 250px;
+            background: #333;
+            border-top: 10px solid green;
+        }
+
+        /* Road line */
+        .line {
+            position: absolute;
+            top: 120px;
+            width: 100%;
+            border-top: 10px dashed white;
+        }
+
+        /* CAR */
+        .car {
+            position: absolute;
+            width: 200px;
+            height: 100px;
+            bottom: 120px;
+            left: 20px;
+            animation: carMove 5s linear infinite;
+            z-index: 10;
+        }
+
+        /* Car body */
+        .car-body {
+            position: absolute;
+            width: 200px;
+            height: 55px;
+            background: red;
+            bottom: 20px;
+            border-radius: 15px;
+        }
+
+        /* Car top */
+        .car-top {
+            position: absolute;
+            width: 110px;
+            height: 45px;
+            background: red;
+            left: 45px;
+            top: 10px;
+            border-radius: 50px 50px 0 0;
+        }
+
+        /* Windows */
+        .window1 {
+            position: absolute;
+            width: 40px;
+            height: 25px;
+            background: lightblue;
+            left: 55px;
+            top: 18px;
+            z-index: 2;
+            border: 3px solid black;
+        }
+
+        .window2 {
+            position: absolute;
+            width: 40px;
+            height: 25px;
+            background: lightblue;
+            left: 105px;
+            top: 18px;
+            z-index: 2;
+            border: 3px solid black;
+        }
+
+        /* Wheels */
+        .wheel {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: black;
+            border-radius: 50%;
+            bottom: 0;
+            z-index: 5;
+        }
+
+        .wheel1 {
+            left: 25px;
+        }
+
+        .wheel2 {
+            right: 25px;
+        }
+
+        .wheel::after {
+            content: "";
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            background: gray;
+            border-radius: 50%;
+            left: 12px;
+            top: 12px;
+        }
+
+        @keyframes carMove {
+            from {
+                left: 20px;
+            }
+
+            to {
+                left: 75%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="game">
+
+    <!-- Clouds -->
+    <div class="cloud cloud1"></div>
+    <div class="cloud cloud2"></div>
+
+    <!-- Car -->
+    <div class="car">
+
+        <div class="car-top"></div>
+
+        <div class="window1"></div>
+        <div class="window2"></div>
+
+        <div class="car-body"></div>
+
+        <div class="wheel wheel1"></div>
+        <div class="wheel wheel2"></div>
+
+    </div>
+
+    <!-- Road -->
+    <div class="road">
+        <div class="line"></div>
+    </div>
+
+</div>
+
+</body>
+</html>

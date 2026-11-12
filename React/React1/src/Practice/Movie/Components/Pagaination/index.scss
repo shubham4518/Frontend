@@ -1,0 +1,18 @@
+.Pagination {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .currentPageNumber {
+    border: 1px solid #000;
+    height: 30px;
+    width: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: wheat;
+    border-radius: 10px;
+    margin: 10px;
+  }
+}
